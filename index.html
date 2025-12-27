@@ -123,7 +123,7 @@
                         <a href="https://www.instagram.com/lok_s_18/" class="social-link"><i
                                 class="fab fa-instagram"></i></a>
                         <a href="mailto:sogarwal42@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
-                         
+
                     </div>
                 </div>
                 <div class="about-image">
@@ -244,21 +244,140 @@
     <section id="projects">
         <div class="container">
             <h2>My Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="ongoing">In Progress</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A web application built with React and Node.js.</p>
-                    <a href="#" class="btn">View Project</a>
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="project-status completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <h3>Live Tracking System</h3>
+                    <p>A real-time location tracking application with interactive maps and live updates.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn">View Demo</a>
+                        <a href="#" class="btn project-btn secondary">Source Code</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A mobile app developed using Flutter.</p>
-                    <a href="#" class="btn">View Project</a>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-status completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <h3>Booking Management System</h3>
+                    <p>A comprehensive booking platform for managing reservations and appointments.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn">View Demo</a>
+                        <a href="#" class="btn project-btn secondary">Source Code</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>An e-commerce website with payment integration.</p>
-                    <a href="#" class="btn">View Project</a>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-status completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <h3>Blogging Website</h3>
+                    <p>A dynamic blogging platform with user authentication and content management.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn">View Demo</a>
+                        <a href="#" class="btn project-btn secondary">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="project-status completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <h3>University Management System</h3>
+                    <p>A comprehensive system for managing university operations, students, and courses.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn">View Demo</a>
+                        <a href="#" class="btn project-btn secondary">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="ongoing">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-status ongoing">
+                            <i class="fas fa-clock"></i>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                    <h3>Food Delivery Application</h3>
+                    <p>A modern food delivery platform connecting restaurants with customers.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Bootstrap</span>
+                        <span class="tech-badge">Tailwind</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn">View Progress</a>
+                        <a href="#" class="btn project-btn secondary">GitHub</a>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="progress-text">75% Complete</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -267,12 +386,104 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn animate">Send Message</button>
-            </form>
+            <p class="contact-subtitle">Let's work together! Send me a message and I'll get back to you soon.</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>sogarwal42@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>LinkedIn</h4>
+                            <p>Ricky Sogarwal</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>GitHub</h4>
+                            <p>Lokesh-sogarwal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="input-border"></div>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="input-border"></div>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="input-border"></div>
+                            <div class="input-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader">
+                                <div class="loader-dot"></div>
+                                <div class="loader-dot"></div>
+                                <div class="loader-dot"></div>
+                            </div>
+                        </button>
+                        <div class="form-status">
+                            <div class="status-message success">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Message sent successfully!</span>
+                            </div>
+                            <div class="status-message error">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Please fill in all fields correctly.</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Floating particles for contact section -->
+            <div class="contact-particles">
+                <div class="contact-particle particle-1"></div>
+                <div class="contact-particle particle-2"></div>
+                <div class="contact-particle particle-3"></div>
+                <div class="contact-particle particle-4"></div>
+                <div class="contact-particle particle-5"></div>
+            </div>
         </div>
     </section>
 
