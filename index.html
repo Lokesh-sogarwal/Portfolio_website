@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ricky Sogarwal</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="animate">Welcome to My Profile</h1>
+            <p class="animate">I'm a passionate developer creating amazing things.</p>
+            <p class="hero-tagline animate">Turning ideas into reality with code and creativity</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn animate">Learn More</a>
+                <a href="Resume.pdf" class="btn btn-secondary animate" target="_blank">View Resume</a>
+            </div>
+        </div>
+        <div class="hero-graphics">
+            <!-- Stars -->
+            <div class="stars">
+                <div class="star star-1"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+                <div class="star star-5"></div>
+                <div class="star star-6"></div>
+                <div class="star star-7"></div>
+                <div class="star star-8"></div>
+                <div class="star star-9"></div>
+                <div class="star star-10"></div>
+            </div>
+
+            <!-- Cosmic Dust -->
+            <div class="cosmic-dust">
+                <div class="dust dust-1"></div>
+                <div class="dust dust-2"></div>
+                <div class="dust dust-3"></div>
+                <div class="dust dust-4"></div>
+                <div class="dust dust-5"></div>
+                <div class="dust dust-6"></div>
+                <div class="dust dust-7"></div>
+                <div class="dust dust-8"></div>
+            </div>
+
+            <!-- Nebula Clouds -->
+            <div class="nebula">
+                <div class="nebula-cloud cloud-1"></div>
+                <div class="nebula-cloud cloud-2"></div>
+                <div class="nebula-cloud cloud-3"></div>
+            </div>
+
+            <!-- Shooting Stars -->
+            <div class="shooting-stars">
+                <div class="shooting-star star-1"></div>
+                <div class="shooting-star star-2"></div>
+                <div class="shooting-star star-3"></div>
+            </div>
+
+            <!-- Existing floating shapes (now galaxy planets) -->
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+
+            <!-- Existing particles (now cosmic particles) -->
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <!-- Galaxy Rings -->
+        <div class="galaxy-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Ricky, a Software Engineer based in Delhi. I love creating innovative
+                        solutions and bringing ideas to life through code.</p>
+                    <p>With [X years] of experience, I've worked on various projects ranging from web development to
+                        [other areas]. I'm always eager to learn new technologies and tackle challenging problems.</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/ricky-sogarwal-642a3a2b3/" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Lokesh-sogarwal" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/lok_s_18/" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="mailto:sogarwal42@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                         <a href="mailto:sogarwal42@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&h=300&q=80"
+                        alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-skill="html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">90%</div>
+                </div>
+                <div class="skill-item" data-skill="css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill-item" data-skill="javascript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">80%</div>
+                </div>
+                <div class="skill-item" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-item" data-skill="java">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">75%</div>
+                </div>
+                <div class="skill-item" data-skill="react">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill-item" data-skill="nodejs">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">65%</div>
+                </div>
+                <div class="skill-item" data-skill="mysql">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">65%</div>
+                </div>
+                <div class="skill-item" data-skill="mongodb">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="skill-percentage">65%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A web application built with React and Node.js.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A mobile app developed using Flutter.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>An e-commerce website with payment integration.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn animate">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
