@@ -1331,6 +1331,8 @@ input.invalid:focus, textarea.invalid:focus {
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 1px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .submit-btn::before {
@@ -1351,8 +1353,8 @@ input.invalid:focus, textarea.invalid:focus {
 .submit-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(231, 76, 60, 0.5), 0 8px 25px rgba(0, 0, 0, 0.3);
-    border-color: #e74c3c;
-    background: linear-gradient(135deg, #c0392b, #a93226);
+    border-color: #ec7063;
+    background: linear-gradient(135deg, #ec7063, #e74c3c);
 }
 
 .submit-btn.loading {
