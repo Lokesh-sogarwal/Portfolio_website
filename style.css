@@ -1611,6 +1611,10 @@ footer {
     .project-btn {
         margin-bottom: 0.5rem;
     }
+
+    .contact-content {
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1707,6 +1711,21 @@ footer {
     section {
         padding: 3rem 0;
     }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .info-icon {
+        align-self: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1738,6 +1757,34 @@ footer {
 
     .btn {
         padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-info {
+        gap: 1.5rem;
+    }
+
+    .info-item {
+        padding: 1rem;
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    input, textarea {
+        padding: 1rem 0.8rem 1rem 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    label {
+        left: 2.5rem;
         font-size: 0.9rem;
     }
 }
@@ -1799,6 +1846,55 @@ footer {
     input, textarea, button {
         font-size: 0.9rem;
     }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .info-item {
+        padding: 0.8rem;
+    }
+
+    .info-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .info-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .info-content p {
+        font-size: 0.8rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 1.2rem;
+    }
+
+    input, textarea {
+        padding: 0.9rem 0.7rem 0.9rem 2.2rem;
+    }
+
+    label {
+        left: 2.2rem;
+        font-size: 0.8rem;
+    }
+
+    .submit-btn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* Hide complex hero graphics on very small screens for performance */
+    .hero-graphics {
+        display: none;
+    }
 }
 
 /* Scroll to Top Button */
@@ -1834,4 +1930,55 @@ footer {
 
 .scroll-to-top i {
     font-size: 1.2rem;
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+
+    .contact-content {
+        gap: 5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Mobile-specific adjustments for scroll-to-top button */
+@media (max-width: 480px) {
+    .scroll-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+
+    .scroll-to-top i {
+        font-size: 1rem;
+    }
 }
