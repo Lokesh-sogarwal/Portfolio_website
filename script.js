@@ -58,6 +58,12 @@ document.querySelectorAll('.progress').forEach(bar => {
 });
 
 // Enhanced Contact Form Functionality
+// Features:
+// - Form validation with visual feedback
+// - Loading states and animations
+// - Success/error status messages
+// - Server-side saving of form responses to contact_responses.txt file
+// - API endpoints for viewing/downloading all responses
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
     const submitBtn = document.querySelector('.submit-btn');
@@ -176,31 +182,49 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show loading state
         submitBtn.classList.add('loading');
 
-        // Simulate form submission (replace with actual API call)
+        // Submit form data to server
         try {
-            await simulateFormSubmission();
+            const formData = new FormData(this);
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    message: formData.get('message')
+                })
+            });
 
-            // Success animation
-            showStatusMessage('success', 'Message sent successfully! I\'ll get back to you soon.');
+            const result = await response.json();
 
-            // Reset form with animation
-            setTimeout(() => {
-                contactForm.reset();
-                inputs.forEach(input => {
-                    input.classList.remove('valid', 'invalid');
-                    const border = input.parentElement.querySelector('.input-border');
-                    if (border) {
-                        anime({
-                            targets: border,
-                            background: 'linear-gradient(90deg, #3498db, #27ae60)',
-                            duration: 300
-                        });
-                    }
-                });
-            }, 2000);
+            if (result.success) {
+                // Success animation
+                showStatusMessage('success', result.message);
+
+                // Reset form with animation
+                setTimeout(() => {
+                    contactForm.reset();
+                    inputs.forEach(input => {
+                        input.classList.remove('valid', 'invalid');
+                        const border = input.parentElement.querySelector('.input-border');
+                        if (border) {
+                            anime({
+                                targets: border,
+                                background: 'linear-gradient(90deg, #3498db, #27ae60)',
+                                duration: 300
+                            });
+                        }
+                    });
+                }, 2000);
+            } else {
+                showStatusMessage('error', result.message);
+            }
 
         } catch (error) {
-            showStatusMessage('error', 'Something went wrong. Please try again.');
+            console.error('Form submission error:', error);
+            showStatusMessage('error', 'Network error. Please try again or check if the server is running.');
         } finally {
             submitBtn.classList.remove('loading');
         }
@@ -220,20 +244,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 messageElement.classList.remove('show');
             }, 5000);
         }
-    }
-
-    // Simulate form submission (replace with actual implementation)
-    function simulateFormSubmission() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                // Simulate 90% success rate
-                if (Math.random() > 0.1) {
-                    resolve();
-                } else {
-                    reject(new Error('Submission failed'));
-                }
-            }, 2000);
-        });
     }
 
     // Contact info item interactions
